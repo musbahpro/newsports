@@ -1,4 +1,6 @@
+/*=============== fonts =================*/
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300&display=swap');
 /*=============== variables =================*/
 :root {
   --blur: #0101a3;
@@ -6,6 +8,7 @@
   --white: #fff;
   --grd: linear-gradient(#0101a3, #00004e);
   --font: "Bebas Neue", cursive;
+  --texfo :'Inter', sans-serif;
   --trns: 0.4s all;
 }
 /*=============== Global Rules =================*/
@@ -53,6 +56,7 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  background-color: var(--blur);
 }
 
 /*=============== navbar =================*/
@@ -81,10 +85,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+    min-height: 100vh;
 }
 .heading_tex h1 {
   letter-spacing: 2px;
-  font-size: 5rem;
+  font-size: 4rem;
   margin: 0;
   position: relative;
 }
@@ -93,30 +98,30 @@ body {
 .befc::after {
   content: "";
   position: absolute;
-  top: 60px;
+  top: 50px;
   left: -5px;
   background-color: var(--bink);
-  width: 381px;
+  width: 315px;
   height: 25px;
   z-index: -1;
 }
 .befc::after {
   content: "";
   position: absolute;
-  top: 60px;
+  top: 50px;
   left: -5px;
   background-color: var(--bink);
-  width: 204px;
+  width: 165px;
   height: 25px;
   z-index: -1;
 }
 .befb::after {
   content: "";
   position: absolute;
-  top: 60px;
+  top: 50px;
   left: -5px;
   background-color: var(--bink);
-  width: 338px;
+  width: 280px;
   height: 25px;
   z-index: -1;
 }
@@ -127,10 +132,35 @@ body {
 }
 .heading_img img {
   max-width: 550px;
-  margin-top: 6rem;
 }
 .heading_btn{
     background-color: var(--bink);
     padding: 10px 20px;
     font-size: 1rem;
+}
+/*=============== out_team =================*/
+.out_team{
+   min-height:80vh ;
+}
+.our_cards{
+    display: flex;
+    justify-content: space-between;
+}
+.our_tex{
+    text-align: center;
+    letter-spacing: 1.5px;
+    font-size: 3rem;
+}
+.our_cards{
+    text-align: center;
+    padding: 40px;
+}
+.our_cards .our h2{
+     letter-spacing: 1.5px;
+}
+.our_cards .our img{
+width: 280px;
+}
+.our_cards .our p{
+font-family: var(--texfo);
 }
