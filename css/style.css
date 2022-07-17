@@ -23,8 +23,8 @@ li {
   list-style: none;
 }
 .container {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -93,7 +93,7 @@ body {
   min-height: 100vh;
 }
 .heading_tex h1 {
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   font-size: 4rem;
   margin: 0;
   position: relative;
@@ -143,6 +143,11 @@ body {
   padding: 10px 20px;
   font-size: 1rem;
   border: none;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 .heading_btn:hover{
   background-color: #c82fd9c7;
@@ -178,7 +183,10 @@ body {
 /*=============== About Us =================*/
 .about{
   text-align: center;
-  min-height: 80vh;
+  min-height: 90vh;
+}
+.about p{
+  font-family: var(--texfo);
 }
 .about_btn{
   margin-top: 35px;
@@ -189,4 +197,31 @@ body {
 .about_img{
  max-width:1000px;
 }
-/*=============== About Us =================*/
+/*=============== letf_sc =================*/
+.letf_sc{
+    text-align: center;
+  min-height: 80vh;
+}
+.left{
+    display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 20rem));
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+
+}
+.left_img img{
+   max-width: 550px;
+}
+.left_tex h1{
+text-align: right;
+letter-spacing: 2px;
+}
+.left_tex p{
+  text-align: right;
+  font-family: var(--texfo);
+}
+.letf_btn{
+  float: right;
+}
+/*=============== blog =================*/
