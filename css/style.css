@@ -1,6 +1,6 @@
 /*=============== fonts =================*/
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300&display=swap");
 /*=============== variables =================*/
 :root {
   --blur: #0101a3;
@@ -8,7 +8,7 @@
   --white: #fff;
   --grd: linear-gradient(#0101a3, #00004e);
   --font: "Bebas Neue", cursive;
-  --texfo :'Inter', sans-serif;
+  --texfo: "Inter", sans-serif;
   --trns: 0.4s all;
 }
 /*=============== Global Rules =================*/
@@ -57,6 +57,11 @@ body {
   margin: 0;
   box-sizing: border-box;
   background-color: var(--blur);
+  transition: var(--trns);
+  -webkit-transition: var(--trns);
+  -moz-transition: var(--trns);
+  -ms-transition: var(--trns);
+  -o-transition: var(--trns);
 }
 
 /*=============== navbar =================*/
@@ -85,7 +90,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-    min-height: 100vh;
+  min-height: 100vh;
 }
 .heading_tex h1 {
   letter-spacing: 2px;
@@ -133,34 +138,55 @@ body {
 .heading_img img {
   max-width: 550px;
 }
-.heading_btn{
-    background-color: var(--bink);
-    padding: 10px 20px;
-    font-size: 1rem;
+.heading_btn {
+  background-color: var(--bink);
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+}
+.heading_btn:hover{
+  background-color: #c82fd9c7;
 }
 /*=============== out_team =================*/
-.out_team{
-   min-height:80vh ;
+.out_team {
+  min-height: 80vh;
 }
-.our_cards{
-    display: flex;
-    justify-content: space-between;
+.our_cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 20rem));
+  justify-content: center;
+  gap: 2rem;
 }
-.our_tex{
-    text-align: center;
-    letter-spacing: 1.5px;
-    font-size: 3rem;
+.our_tex {
+  text-align: center;
+  letter-spacing: 1.5px;
+  font-size: 3rem;
 }
-.our_cards{
-    text-align: center;
-    padding: 40px;
+.our_cards {
+  text-align: center;
+  padding: 40px;
 }
-.our_cards .our h2{
-     letter-spacing: 1.5px;
+.our_cards .our h2 {
+  letter-spacing: 1.5px;
 }
-.our_cards .our img{
-width: 280px;
+.our_cards .our img {
+  width: 280px;
 }
-.our_cards .our p{
-font-family: var(--texfo);
+.our_cards .our p {
+  font-family: var(--texfo);
 }
+/*=============== About Us =================*/
+.about{
+  text-align: center;
+  min-height: 80vh;
+}
+.about_btn{
+  margin-top: 35px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.about_img{
+ max-width:1000px;
+}
+/*=============== About Us =================*/
