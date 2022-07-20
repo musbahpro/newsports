@@ -23,8 +23,7 @@ li {
   list-style: none;
 }
 .container {
-  padding-left: 10px;
-  padding-right: 10px;
+padding: 40px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -154,7 +153,9 @@ body {
 }
 /*=============== out_team =================*/
 .out_team {
-  min-height: 80vh;
+  min-height: 75vh;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .our_cards {
   display: grid;
@@ -183,7 +184,9 @@ body {
 /*=============== About Us =================*/
 .about{
   text-align: center;
-  min-height: 90vh;
+  min-height: 75vh;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .about p{
   font-family: var(--texfo);
@@ -200,7 +203,9 @@ body {
 /*=============== letf_sc =================*/
 .letf_sc{
     text-align: center;
-  min-height: 80vh;
+  min-height: 75vh;
+  padding-top: 30px;
+  padding-bottom: 30px;;
 }
 .left{
     display: grid;
@@ -226,7 +231,9 @@ letter-spacing: 2px;
 }
 /*=============== blog =================*/
 .blog{
-  min-height: 78vh;
+    min-height: 75vh;
+  padding-top: 30px;
+  padding-bottom: 30px;
   background-color: #000086;
   padding-top: 3rem;
 }
@@ -245,9 +252,10 @@ letter-spacing: 2px;
 .blog_card h2{
  letter-spacing: 1.5px;
 }
-.blog_card{
- 
-}
-.blog_card{
- 
+
+/*=============== blog =================*/
+.Contact_Us{
+  min-height: 75vh;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
