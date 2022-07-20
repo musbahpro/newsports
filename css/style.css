@@ -142,11 +142,11 @@ body {
   padding: 10px 20px;
   font-size: 1rem;
   border: none;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
 }
 .heading_btn:hover{
   background-color: #c82fd9c7;
@@ -258,4 +258,50 @@ letter-spacing: 2px;
   min-height: 75vh;
   padding-top: 30px;
   padding-bottom: 30px;
+}
+.Contact{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 20rem));
+  justify-content: space-between;
+  align-items: center;
+  gap: 6rem;
+}
+form{
+  margin-top: 3rem;
+}
+input
+,textarea{
+  outline: none;
+  border: none;
+  width: 20rem;
+  padding: 10px ;
+  margin-bottom: 10px;
+  background-color: var(--bink);
+  color: var(--white);
+}
+::placeholder { 
+  color: rgba(255, 255, 255, 0.831);
+  opacity: 1;
+}
+input[type="checkbox"]{
+  display: inline;
+}
+.contact_tex h2{
+    letter-spacing: 1.5px;
+  font-size: 3rem;
+}
+.contact_tex p{
+    letter-spacing: 1.5px;
+  font-size: 1rem;
+}
+.chwc{
+  display: flex;
+  gap: 2rem;
+}
+
+input[type="checkbox"] {
+  width: 3rem;
+}
+.chwc span{
+  font-size: 12px;
 }
