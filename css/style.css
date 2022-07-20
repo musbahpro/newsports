@@ -275,9 +275,11 @@ input
   border: none;
   width: 20rem;
   padding: 10px ;
+  padding-top: 15px;
   margin-bottom: 10px;
   background-color: var(--bink);
   color: var(--white);
+  font-family: var(--texfo);
 }
 ::placeholder { 
   color: rgba(255, 255, 255, 0.831);
@@ -304,4 +306,17 @@ input[type="checkbox"] {
 }
 .chwc span{
   font-size: 12px;
+}
+
+footer{
+background: var(--grd);
+  min-height: 20vh;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+}
+
+.footer_list li{
+margin-bottom: 10px;
+font-size: 1.5rem;
 }
