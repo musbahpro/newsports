@@ -229,6 +229,55 @@ letter-spacing: 2px;
 .letf_btn{
   float: right;
 }
+/*=============== right_sc =================*/
+@media (min-width: 768px) {
+.rightt_img{
+  width: 90%;
+}
+.right_tex{
+  width: 90%;
+}
+.right_tex {
+text-align: center;
+letter-spacing: 2px;
+}
+}
+.right_sc{
+  text-align: center;
+  min-height: 75vh;
+  padding-top: 30px;
+  padding-bottom: 30px;;
+}
+.right{
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+}
+
+.rightt_img{
+  width: 50%;
+}
+.right_tex{
+  width: 40%;
+}
+.rightt_img img{
+   max-width: 550px;
+
+}
+.right_tex h1{
+text-align: right;
+letter-spacing: 2px;
+}
+.right_tex p{
+  text-align: right;
+  font-family: var(--texfo);
+}
+.right_btn{
+  float: right;
+}
+
 /*=============== blog =================*/
 .blog{
     min-height: 75vh;
@@ -315,7 +364,10 @@ background: var(--grd);
   padding-bottom: 30px;
 
 }
-
+footer h3{
+  text-align: center;
+  font-family: var(--texfo);
+}
 .footer_list li{
 margin-bottom: 10px;
 font-size: 1.5rem;
@@ -323,4 +375,21 @@ font-size: 1.5rem;
 .soctil{
   text-align: center;
   margin-bottom: 2rem;
+
+}
+.soctil i{
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    transition:var(--trns);
+    -webkit-transition:var(--trns);
+    -moz-transition:var(--trns);
+    -ms-transition:var(--trns);
+    -o-transition:var(--trns);
+}
+.soctil i:hover{
+  color: var(--bink);
+}
+.fotr{
+  display: flex;
+  justify-content: space-between;
 }
